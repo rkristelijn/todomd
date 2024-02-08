@@ -3,7 +3,7 @@
 A tool for the [TODO.md](https://github.com/todo-md/todo-md) standard
 
 ```shell
-npx todo-md lint
+npx todomd lint
 Linting TODO.md
 
 [warn] Found todos in file!
@@ -17,11 +17,11 @@ BACKLOG
 
 ## Usage
 
-- `npx todo-md lint` - lints `TODO.md`
-- `npx todo-md help` - help 
-- `npx todo-md help lint` - help on linting
-- `npx todo-md lint -f README.md` - find open tasks in `README.md` instead
-- `npx todo-md init` - create an example `TODO.md`
+- `npx todomd lint` - lints `TODO.md`
+- `npx todomd help` - help 
+- `npx todomd help lint` - help on linting
+- `npx todomd lint -f README.md` - find open tasks in `README.md` instead
+- `npx todomd init` - create an example `TODO.md`
 
 
 ## Development
