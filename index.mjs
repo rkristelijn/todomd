@@ -12,10 +12,10 @@ const header = chalk.blueBright;
 const success = chalk.greenBright("[success] ");
 
 program
-  .name("todo-md")
+  .name("todomd")
   .description("A simple tool for working with TODO.md files")
   .usage(
-    "lint\t\t - lints TODO.md\n  todo-md lint -f README.md\t - lints README.md"
+    "lint\t\t - lints TODO.md\n  todomd lint -f README.md\t - lints README.md"
   )
   .version(process.env.npm_package_version);
 
