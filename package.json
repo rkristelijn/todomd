@@ -1,5 +1,5 @@
 {
-  "name": "todomd",
+  "name": "@rkristelijn/todomd",
   "experimental": "true",
   "version": "1.0.0",
   "description": "Simple tools or a simple TODO.md",
