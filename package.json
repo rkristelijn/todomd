@@ -6,7 +6,7 @@
   "main": "index.jms",
   "type": "module",
   "bin": {
-    "todo-md": "index.jms"
+    "todo-md": "index.mjs"
   },
   "scripts": {
     "test": "node index.mjs lint"
