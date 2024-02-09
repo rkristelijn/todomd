@@ -21,6 +21,7 @@ BACKLOG
 - `npx todomd help` - help 
 - `npx todomd help lint` - help on linting
 - `npx todomd lint -f README.md` - find open tasks in `README.md` instead
+- `npx todomd lint -f TODO.md -g npm-tasks.junit.xml` - only use -f and -g together: compiles a gitlab report
 - `npx todomd init` - create an example `TODO.md`
 
 

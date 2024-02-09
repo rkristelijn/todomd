@@ -1,7 +1,7 @@
 {
   "name": "@rkristelijn/todomd",
   "experimental": "true",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "Simple tools or a simple TODO.md",
   "main": "index.jms",
   "type": "module",
@@ -9,7 +9,12 @@
     "todomd": "index.mjs"
   },
   "scripts": {
-    "test": "node index.mjs lint"
+    "test": "node index.mjs lint",
+    "init": "node index.mjs init",
+    "readme": "node index.mjs lint -f README.md",
+    "gitlab": "node index.mjs lint -f TODO.md -g npm-tasks.junit.xml",
+    "gitlab2": "node index.mjs lint -f EXAMPLE.md -g npm-tasks.junit.xml",
+    "example": "node index.mjs lint -f EXAMPLE.md"
   },
   "repository": {
     "type": "git",
