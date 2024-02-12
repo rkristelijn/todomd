@@ -114,10 +114,8 @@ const lint = async (file, gitlab) => {
   let response;
   if (gitlab) {
     response = new GitlabReportResponse();
-    response.debug();
   } else {
     response = new ConsoleResponse();
-    response.debug();
   }
 
   response.begin(file);
