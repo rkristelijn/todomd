@@ -64,7 +64,9 @@ class GitlabReportResponse extends Response {
   }
   warn(message, message2) {
     console.log(
-      `    <testcase classname="${message2}" name="${message}" time="0" />`
+      `    <testcase classname="${message2}" name="${message}" time="0">
+      <failure message="${message2}">${message}</failure>
+    </testcase>`
     );
   }
   success() {
@@ -153,7 +155,7 @@ const lint = async (file, gitlab) => {
         if (shouldPrintHeaderEnd) {
           response.headerEnd(previousSection);
         }
-        
+
         response.header(currentSection);
         // make sure to print only once
         printedHeader = true;
