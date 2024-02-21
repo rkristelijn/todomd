@@ -5,6 +5,9 @@ import { Command } from "commander";
 import * as fs from "fs";
 import * as readline from "readline";
 
+function onlyAlphaNumeric(str) {
+  return str.replace(/[^a-zA-Z0-9\s\-\[\]\/]/g, "");
+}
 class Response {
   begin() {
     console.log("Begin");
@@ -64,8 +67,10 @@ class GitlabReportResponse extends Response {
   }
   warn(message, message2) {
     console.log(
-      `    <testcase classname="${message2}" name="${message}" time="0">
-      <failure message="${message2}">${message}</failure>
+      `    <testcase classname="${onlyAlphaNumeric(
+        message2
+      )}" name="${onlyAlphaNumeric(message)}" time="0">
+      <failure message="${onlyAlphaNumeric(message2)}">${message}</failure>
     </testcase>`
     );
   }
